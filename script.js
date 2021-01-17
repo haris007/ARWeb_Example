@@ -54,17 +54,7 @@ window.onload = () => {
                         window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
                     });
 
-                    const clickListener = function (ev) {
-                        ev.stopPropagation();
-                        ev.preventDefault();
-                        alert('start');
-                        const name = ev.target.getAttribute('title');
-            
-                            alert(name);
-                            
-                    };
-
-                    placeText.addEventListener('click', function(){ alert("Hello World!");});
+                    placeText.addEventListener("click", function(){ alert("Hello World!");});
                     scene.appendChild(placeText);
                 });
             })
@@ -76,14 +66,4 @@ window.onload = () => {
             timeout: 27000,
         }
     );
-};
-
-const clickListener = function (ev) {
-    ev.stopPropagation();
-    ev.preventDefault();
-    alert('start');
-    const name = ev.target.getAttribute('title');
-
-        alert(name);
-        
 };
