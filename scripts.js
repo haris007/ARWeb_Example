@@ -28,6 +28,7 @@ function loadPlaces(position) {
         })
         .catch((err) => {
             console.error('Error with places API', err);
+            alert('Error with places API', err);
         })
 };
 
