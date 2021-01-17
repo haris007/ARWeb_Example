@@ -76,3 +76,13 @@ window.onload = () => {
         }
     );
 };
+
+const clickListener = function (ev) {
+    ev.stopPropagation();
+    ev.preventDefault();
+    alert('start');
+    const name = ev.target.getAttribute('title');
+
+        alert(name);
+        
+};
