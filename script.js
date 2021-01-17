@@ -53,8 +53,9 @@ window.onload = () => {
                     placeText.addEventListener('loaded', () => {
                         window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
                     });
-
-                    placeText.addEventListener("click", function(){ alert("Hello World!");});
+                    placeText.addEventListener('click', () => {
+                        alert("Hello World!");
+                    });
                     scene.appendChild(placeText);
                 });
             })
