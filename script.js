@@ -64,8 +64,7 @@ window.onload = () => {
                         if (el && el === ev.target) {
                             const label = document.createElement('span');
                             const container = document.createElement('div');
-                            container.setAttribute('id', 'place-label');
-                            alert(name);
+                            container.setAttribute('id', place.distance);
                             label.innerText = name;
                             container.appendChild(label);
                             document.body.appendChild(container);
