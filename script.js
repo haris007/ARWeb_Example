@@ -66,6 +66,7 @@ window.onload = () => {
                             const label = document.createElement('span');
                             const container = document.createElement('div');
                             container.setAttribute('id', 'place-label');
+                            alert(name);
                             label.innerText = name;
                             container.appendChild(label);
                             document.body.appendChild(container);
