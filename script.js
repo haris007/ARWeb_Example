@@ -22,13 +22,11 @@ function loadPlaces(position) {
         .then((res) => {
             return res.json()
                 .then((resp) => {
-                    alert(resp.response.venues);
                     return resp.response.venues;
                 })
         })
         .catch((err) => {
             console.error('Error with places API', err);
-            alert('Error with places API', err);
         })
 };
 
@@ -55,7 +53,6 @@ window.onload = () => {
                     placeText.addEventListener('loaded', () => {
                         window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
                     });
-                    alert('in alert '+placeText);
                     scene.appendChild(placeText);
                 });
             })
