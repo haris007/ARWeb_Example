@@ -60,12 +60,8 @@ window.onload = () => {
                         alert('start');
                         const name = ev.target.getAttribute('title');
             
-                        const el = ev.detail.intersection && ev.detail.intersection.object.el;
-            
-                        if (el && el === ev.target) {
                             alert(name);
                             
-                        }
                     };
                     placeText.addEventListener('click', clickListener);
                     scene.appendChild(placeText);
