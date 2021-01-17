@@ -63,7 +63,8 @@ window.onload = () => {
                             alert(name);
                             
                     };
-                    placeText.addEventListener('click', clickListener);
+
+                    placeText.addEventListener('click', function(){ alert("Hello World!");});
                     scene.appendChild(placeText);
                 });
             })
